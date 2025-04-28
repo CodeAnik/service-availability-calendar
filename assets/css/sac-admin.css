@@ -1,0 +1,137 @@
+.form-table th {
+    font-weight: bold;
+}
+
+.form-table td {
+    padding-bottom: 10px;
+}
+
+.action-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+/* General styles for the table */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    /* Allow horizontal scrolling on smaller screens */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Style for the table itself */
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+.table-responsive th,
+.table-responsive td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-responsive th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+/* Add a hover effect to rows */
+.table-responsive tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Make the table more readable on mobile */
+@media (max-width: 767px) {
+
+    .table-responsive th,
+    .table-responsive td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .table-responsive td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .table-responsive td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    /* Add specific adjustments for small screens */
+    .table-responsive th {
+        display: none;
+        /* Hide headers on small screens */
+    }
+
+    /* Adjust the action buttons for mobile */
+    .action-button {
+        text-align: center;
+    }
+
+    .action-button form {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .action-button a,
+    .action-button input[type="submit"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Styles for tablets (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .table-responsive th,
+    .table-responsive td {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+
+    /* Adjust action buttons */
+    .action-button {
+        text-align: center;
+    }
+
+    .action-button form {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .action-button a,
+    .action-button input[type="submit"] {
+        width: auto;
+        margin: 0 5px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+
+    .table-responsive th,
+    .table-responsive td {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .action-button {
+        text-align: center;
+    }
+}
