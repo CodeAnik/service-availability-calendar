@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Service Availability using Calendar
- * Plugin URI: https://yourwebsite.com/service-availability-calendar
+ * Plugin URI: https://dgency.com
  * Description: Manages and displays service availability with a calendar integration.
  * Version: 2.0.1
  * Author: Anik Khan
