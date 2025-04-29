@@ -5,7 +5,7 @@
  * Description: Manages and displays service availability with a calendar integration.
  * Version: 2.0.1
  * Author: Anik Khan
- * Author URI: codeanik.github.io/portfolio
+ * Author URI: https://codeanik.github.io/portfolio
  * License: GPLv2 or later
  * Text Domain: service-availability-calendar
  */
